@@ -3,5 +3,6 @@ def max_integer(my_list=[]):
         return None
     ax = my_list[0]
     for x in my_list:
-        ax = max(ax, x)
+        if x >= ax:
+            ax = x
     return (ax)
